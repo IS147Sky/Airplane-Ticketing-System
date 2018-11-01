@@ -1,1 +1,50 @@
 // This part of the program collects customer data (user input)
+package com.company;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Main {
+
+    public static void main(String[] args) {
+	// write your code here
+
+        List<String> FName = new ArrayList<>();
+        FName.add("Anthony");
+        FName.add("Wendy");
+        FName.add("Penelope");
+        FName.add("Aaron");
+        FName.add("Levi");
+
+        List<String> LName = new ArrayList<>();
+        LName.add("Castillo");
+        LName.add("Greene");
+        LName.add("Winter");
+        LName.add("Williams");
+        LName.add("Schwartz");
+
+        List<Integer> Age = new ArrayList<>();
+        Age.add(24);
+        Age.add(54);
+        Age.add(8);
+        Age.add(33);
+        Age.add(68);
+
+        List<String> Nationality = new ArrayList<>();
+        Nationality.add("Spain");
+        Nationality.add("England");
+        Nationality.add("United States of America");
+        Nationality.add("United States of America");
+        Nationality.add("Canada");
+
+        List<Integer> PassportNum = new ArrayList<>();
+        PassportNum.add(29478564);
+        PassportNum.add(119654207);
+        PassportNum.add(398464741);
+        PassportNum.add(146554734);
+        PassportNum.add(185967012);
+
+        List<ArrayList<>> Table = new ArrayList<ArrayList<>>(FName, LName, Age, Nationality, PassportNum);
+
+    }
+}

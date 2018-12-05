@@ -1,1 +1,38 @@
-// This part of the program allows user to choose details about the flight and prints their tickets.
+package com.company;
+public class Main {
+
+    public static void main(String[] args)
+    {
+        String[][] tableArray = new String[5][3];
+        int rows =5;
+        int columns =3;
+
+        tableArray[0][0] = "Airlines  | ";
+        tableArray[1][0] = "British Airways:";
+        tableArray[2][0] = "Qatar:";
+        tableArray[3][0] = "Southwest:";
+        tableArray[4][0] = "Delta :";
+
+        tableArray[0][1] = " Gate Number   |";
+        tableArray[1][1] = " 24A ";
+        tableArray[2][1] = "           33C ";
+        tableArray[3][1] = "       43W ";
+        tableArray[4][1] = "          24N ";
+
+
+        tableArray[0][2] = "    Destination |" ;
+        tableArray[1][2] = "           Birmingham ";
+        tableArray[2][2] = "               Dubai ";
+        tableArray[3][2] = "             Chicago ";
+        tableArray[4][2] = "             Australia ";
+
+        for(int i=0; i<rows; i++)
+        {
+            for (int j=0; j<columns; j++)
+            {
+                System.out.print(tableArray[i][j]);
+            }
+            System.out.println("\n-----------------------------------------");
+        }
+    }
+}

@@ -5,9 +5,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CusInfo {
-
-    public static void CusInfo(String[] args) {
-	// write your code here
+    public static void cusInfo(String[] args) {
+        // write your code here
 
         List<String> FName = new ArrayList<>();
         FName.add("Anthony");
@@ -37,14 +36,9 @@ public class CusInfo {
         Nationality.add("United States of America");
         Nationality.add("Canada");
 
-        List<Integer> PassportNum = new ArrayList<>();
-        PassportNum.add(29478564);
-        PassportNum.add(119654207);
-        PassportNum.add(398464741);
-        PassportNum.add(146554734);
-        PassportNum.add(185967012);
-
-        List<ArrayList<>> Table = new ArrayList<ArrayList<>>(FName, LName, Age, Nationality, PassportNum);
-
-    }
-}
+        List<String> PassportNum = new ArrayList<>();
+        PassportNum.add("29478564");
+        PassportNum.add("119654207");
+        PassportNum.add("398464741");
+        PassportNum.add("146554734");
+        PassportNum.add("185967012");

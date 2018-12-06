@@ -23,12 +23,12 @@ public class Main {
         LName.add("Williams");
         LName.add("Schwartz");
 
-        List<Integer> Age = new ArrayList<>();
-        Age.add(24);
-        Age.add(54);
-        Age.add(8);
-        Age.add(33);
-        Age.add(68);
+        List<String> Age = new ArrayList<>();
+        Age.add("24");
+        Age.add("54");
+        Age.add("8");
+        Age.add("33");
+        Age.add("68");
 
         List<String> Nationality = new ArrayList<>();
         Nationality.add("Spain");

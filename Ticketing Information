@@ -1,37 +1,31 @@
 
 // This part of the program uses "customer info" to determine prices of tickets according to destination and customer age. 
 
-import "customer info"
+package com.company;
+
+import java.util.Objects;
 public class TicketInfo
 {
-	public double getPrice(string destination, int age)
-	{
-		double tempPrice;
-		double ageMod;
-		if(destination == "regional")
-		{
-			tempPrice = 100;
-		}
-		else if(destination == "national")
-		{
-			tempPrice = 400;
-		}
-		else if(destination == "international")
-		{
-			tempPrice = 1200;
-		}
-		if(age < 18)
-		{
-			ageMod = 0.5;
-		}
-		else if(age > 64)
-		{
-			ageMod = 0.75;
-		}
-		else
-		{
-			ageMod = 1;
-		}		
-		return tempPrice * ageMod;
-	}
+    public double getPrice(String destination, int age) {
+        double ageMod;
+        double tempPrice = 0;
+        if (Objects.equals(destination, "regional")) {
+            tempPrice = 100;
+        }
+        else if (Objects.equals(destination, "national")) {
+            tempPrice = 400;
+        }
+        else if (Objects.equals(destination, "international")) {
+            tempPrice = 1200;
+        }
+        if (age < 18) {
+            ageMod = 0.5;
+        } else if (age > 64) {
+            ageMod = 0.75;
+        } else {
+            ageMod = 1;
+        }
 
+        double TicketRate = tempPrice * ageMod;
+        return TicketRate;
+    }
